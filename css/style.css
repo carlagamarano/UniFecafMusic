@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+@media screen and (min-width:1024px){
+    .fecaf {
+        color:rgb(255, 47, 0);
+    }
+    
+    .music {
+        color:red;
+    }
+    
+    /* Estiliza elementos <h1> com a cor branca */
+    .MENU > h1 {
+        font-size: 30px;
+        color: white;
+    }
+    
+    /* Define o estilo do corpo do documento HTML */
+    body {
+        height: 100vh; /* Ocupa 100% da altura da viewport */
+        background-color: #05072f; /* Define a cor de fundo */
+        background-attachment: fixed; /* Mantém o fundo fixo enquanto a página rola */
+        display: flex; 
+        flex-direction: column; /* Organiza os elementos em coluna */
+        padding: 10px; /* Adiciona um espaçamento interno ao redor do corpo */
+    }
+    
+    header {
+        padding-bottom: 30px; /* Adiciona espaço abaixo 
+        do cabeçalho */
+        display: flex ;
+        flex-direction: row;
+    }
+    
+    .menu {
+        display: flex; /* Usa flexbox para organização dos elementos */ 
+        flex-direction: row;
+        justify-content: space-between; /* Distribui os elementos horizontalmente */
+        align-items: center; /* Alinha os elementos verticalmente */
+        padding-bottom: 15px; /* Adiciona espaço abaixo do menu */
+    }
+    
+    nav {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+    }
+
+    nav li a{ 
+        text-decoration: none;
+        color: white;
+        font-size: 15pt;
+
+    }
+
+    nav > li{
+        justify-content: space-around;
+        margin: 15px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        width: 100%; /* Ocupa 100% da largura disponível */
+        height: calc(90vh - 85px); /* Calcula a altura descontando a altura do cabeçalho */
+        color: white;
+    }
+    
+    .texto-banner {
+        width: 100%;
+        max-width: 895px; /* Define uma largura máxima */
+        margin: auto;
+        text-align: left; /* Alinha o texto à esquerda */
+        padding: 0 20px;
+        font-size: 40px; /* Definindo o tamanho da fonte */
+    }
+    
+    .capa {
+       width: 100%;
+       height: auto;
+       max-width: 600px;
+       margin: auto;
+    }
+    
+    .buttons {
+        margin-top: 40px; /* Adiciona espaço acima dos botões */
+        display: flex;
+    }
+    
+    .Button1 {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(93, 4, 176);
+        padding: 10px 35px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        width: fit-content;  /* Ajusta a largura conforme o conteúdo */
+        margin-right: 10px; /* Adiciona espaçamento à direita */
+    }
+    
+    .Button2 {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 10px 35px;
+        border-radius: 10px;
+        display: flex;
+        align-items:baseline;
+        width: fit-content;
+        margin-right: 10px;
+    }
+
+    footer {
+        height: 100vw;
+        text-align: center;
+        padding: 10px;
+        font-size: 15pt;
+    }
+}
+
